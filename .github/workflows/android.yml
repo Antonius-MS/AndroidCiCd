@@ -34,3 +34,6 @@ jobs:
       with:
         name: Application-release.apk
         path: app
+    - name: Final Check with Jar Signer
+      run: |
+          jarsigner -verify -verbose -certs app/Application-release.apk
