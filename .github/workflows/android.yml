@@ -32,8 +32,7 @@ jobs:
     - name: Publish APK
       uses: actions/upload-artifact@v3
       with:
-        name: Application-release.apk
-        path: ${{ inputs.working-directory }}
+        path: Application-release.apk
     - name: Final Check with Jar Signer
       run: |
-          jarsigner -verify -verbose -certs ${{ inputs.working-directory }}/Application-release.apk
+          jarsigner -verify -verbose -certs Application-release.apk
