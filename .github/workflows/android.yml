@@ -1,10 +1,6 @@
-name: Android CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+name: Android CI publishing APK
+run-name: ${{ github.actor }} runs Android CI for publishing APK
+on: [push]
 
 jobs:
   build:
