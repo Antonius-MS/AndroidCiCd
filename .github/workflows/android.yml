@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Application-release.apk
-        path: ${{ inputs.working-directory }
+        path: ${{ inputs.working-directory }}
     - name: Final Check with Jar Signer
       run: |
           jarsigner -verify -verbose -certs ${{ inputs.working-directory }}/Application-release.apk
