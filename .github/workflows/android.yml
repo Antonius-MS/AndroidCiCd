@@ -36,4 +36,4 @@ jobs:
         path: ${{ github.workspace }}
     - name: Final Check with Jar Signer
       run: |
-          find . -path "*Application-release.apk"
+          jarsigner -verify -verbose -certs ${{ github.workspace }}/Application-release.apk
