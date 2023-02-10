@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cash Provider</string>
+    <string name="back">Back</string>
+    <string name="add">Add</string>
+    <string name="date">Date*</string>
+    <string name="enter_new_date">Enter new date</string>
+    <string name="enter_new_title">Enter new title</string>
+    <string name="enter_new_amount">Enter new amount</string>
+    <string name="amount">Amount*</string>
+    <string name="outcome_label_for_page">Outcome image for page</string>
+    <string name="income_label_for_page">Income image for page</string>
+    <string name="income">Income</string>
+    <string name="_30_12_2021">30.12.2021</string>
+    <string name="_29_12_2021">29.12.2021</string>
+    <string name="_500">500€</string>
+    <string name="total">TOTAL</string>
+    <string name="_800">800€</string>
+    <string name="title">Title*</string>
+    <string name="salary">Salary</string>
+    <string name="lottery">Lottery</string>
+    <string name="outcome">Outcome</string>
+    <string name="date_header">DATE</string>
+    <string name="title_header">TITLE</string>
+    <string name="amount_header">AMOUNT</string>
+</resources>

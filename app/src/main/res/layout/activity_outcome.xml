@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/outcome_label_for_page"
+            android:layout_gravity="center"
+            android:id="@+id/cp_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_out" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/date"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/et_dateOutcome"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_new_date"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/title"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_titleOutcome"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_new_title"
+            android:minHeight="48dp"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/amount"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_amountOutcome"
+            android:imeOptions="actionDone"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:hint="@string/enter_new_amount"
+            android:minHeight="48dp"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:digits="0123456789.," />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_backFromOutcome"
+            android:src="@drawable/ic_arrow_back"
+            android:background="@drawable/roundcorner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="100dp" />
+
+        <ImageButton
+            android:id="@+id/btn_addOutcome"
+            android:src="@drawable/ic_add_sign"
+            android:background="@drawable/roundcorner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

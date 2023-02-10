@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <item name="android:background">#add8e6</item>
+</style>
+</resources>
