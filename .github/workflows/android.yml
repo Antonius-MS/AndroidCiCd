@@ -34,11 +34,6 @@ jobs:
       with:
         path: app
         name: Application-release.apk
-    - uses: actions/download-artifact@v3
-      with:
-        path: app
-        name: Application-release.apk
-    
-    - name: Display structure of downloaded files
-      run: jarsigner -verify -verbose -certs Application-release.apk
-      working-directory: app
+    - name: Final Check with Jar Signer
+      run: |
+          jarsigner -verify -verbose -certs app/Application-release.apk
