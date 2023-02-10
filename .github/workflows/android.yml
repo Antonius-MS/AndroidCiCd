@@ -41,4 +41,4 @@ jobs:
     
     - name: Final Check with Jar Signer
       run: |
-          jarsigner -verify -verbose -certs app/Application-release.apk
+          jarsigner -verify -verbose -certs /home/runner/work/AndroidCiCd/AndroidCiCd/app/Application-release.apk
