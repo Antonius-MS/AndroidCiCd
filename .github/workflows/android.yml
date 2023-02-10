@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Application-release.apk
-        path: app
+        path: ${{ github.workspace }}
     - name: Final Check with Jar Signer
       run: |
           find . -path "*Application-release.apk"
