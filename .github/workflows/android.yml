@@ -24,7 +24,7 @@ jobs:
           echo "RELEASE_STORE_PASSWORD=${{secrets.ANDROID_KEYSTORE_PASSPHRASE}}" >> gradle.properties
           echo "RELEASE_KEY_PASSWORD=${{secrets.ANDROID_KEYSTORE_PASSPHRASE}}" >> gradle.properties
           echo "RELEASE_KEY_ALIAS=${{secrets.KEYSTORE_ALIAS}}" >> gradle.properties
-          echo "RELEASE_STORE_FILE=${{secrets.KEYSTORE_FILE}}" >> gradle.properties
+          echo "RELEASE_STORE_FILE=android-keystore.jks >> gradle.properties
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
