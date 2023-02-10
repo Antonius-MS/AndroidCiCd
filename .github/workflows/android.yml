@@ -32,8 +32,11 @@ jobs:
     - name: Publish APK
       uses: actions/upload-artifact@v3
       with:
-        name: Application-release.apk
-        path: ${{ github.workspace }}
+        path: Application-release.apk
+    - uses: actions/download-artifact@v3
+      with:
+        path: Application-release.apk
+    
     - name: Final Check with Jar Signer
       run: |
-          jarsigner -verify -verbose -certs ${{ github.workspace }}/Application-release.apk
+          jarsigner -verify -verbose -certs Application-release.apk
