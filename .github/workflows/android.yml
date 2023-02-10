@@ -39,6 +39,6 @@ jobs:
         path: app
         name: Application-release.apk
     
-    - name: Final Check with Jar Signer
-      run: |
-          jarsigner -verify -verbose -certs /home/runner/work/AndroidCiCd/AndroidCiCd/app/Application-release.apk
+    - name: Display structure of downloaded files
+      run: jarsigner -verify -verbose -certs Application-release.apk
+      working-directory: app
